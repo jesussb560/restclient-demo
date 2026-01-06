@@ -15,6 +15,16 @@ import org.springframework.web.service.registry.ImportHttpServices;
 import java.util.Optional;
 import java.util.UUID;
 
+/**
+ * Configuration class for the Rest client HTTP interfaces
+ * <p>
+ *     This class is using the new {@link ImportHttpServices} annotation for services and groups configurations.
+ *     All HTTP interfaces using @HttpExchange must be included here, otherwise, Spring will not be able to register a bean for each
+ *     client.
+ * </p>
+ *
+ * @version 1.0.0
+ */
 @Slf4j
 @Configuration(proxyBeanMethods = false)
 @ImportHttpServices(group = "jsonplaceholder", types = {PostClient.class, UserClient.class})
@@ -22,6 +32,11 @@ public class HttpClientConfig {
 
     public static final String HEADER = "x-custom-header-id";
 
+    /**
+     * Group configurer method for the jsonplaceholder clients,
+     * including the base url, custom HTTP status handling and a request interceptor for headers.
+     * @return a configuration for each client.
+     */
     @Bean
     RestClientHttpServiceGroupConfigurer groupConfigurer(){
         return groups -> {

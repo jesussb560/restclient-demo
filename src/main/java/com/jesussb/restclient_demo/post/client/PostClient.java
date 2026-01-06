@@ -10,6 +10,12 @@ import org.springframework.web.service.annotation.*;
 
 import java.util.List;
 
+/**
+ * Rest Client for {@code /posts} resource using the declarative HTTP interfaces
+ * Base URL configured in {@link com.jesussb.restclient_demo.common.HttpClientConfig}
+ *
+ * @version 1.0.0
+ */
 @HttpExchange(url = "posts", accept = "application/json")
 public interface PostClient {
 
