@@ -7,13 +7,13 @@ import org.springframework.web.service.annotation.HttpExchange;
 
 import java.util.List;
 
-@HttpExchange(url = "https://jsonplaceholder.typicode.com", accept = "application/json")
+@HttpExchange(url = "/users", accept = "application/json")
 public interface UserClient {
 
-    @GetExchange("/users")
+    @GetExchange
     List<User> findAll();
 
-    @GetExchange("/users/{id}")
+    @GetExchange("/{id}")
     User findById(@PathVariable Integer id);
 
 }

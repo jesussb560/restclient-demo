@@ -10,25 +10,25 @@ import org.springframework.web.service.annotation.*;
 
 import java.util.List;
 
-@HttpExchange(url = "https://jsonplaceholder.typicode.com", accept = "application/json")
+@HttpExchange(url = "posts", accept = "application/json")
 public interface PostClient {
 
-    @GetExchange("/posts")
+    @GetExchange
     List<Post> findAll();
 
-    @GetExchange("/posts/{id}")
+    @GetExchange("/{id}")
     Post findById(@PathVariable Integer id);
 
-    @PostExchange("/posts")
+    @PostExchange
     Post create(@RequestBody PostRequest postRequest);
 
-    @PutExchange("/posts/{id}")
+    @PutExchange("/{id}")
     Post update(@PathVariable Integer id, @RequestBody PutRequest putRequest);
 
-    @PatchExchange("/posts/{id}")
+    @PatchExchange("/{id}")
     Post patch(@PathVariable Integer id, @RequestBody PatchRequest patchRequest);
 
-    @DeleteExchange("/posts/{id}")
+    @DeleteExchange("/{id}")
     void delete(@PathVariable Integer id);
 
 }
