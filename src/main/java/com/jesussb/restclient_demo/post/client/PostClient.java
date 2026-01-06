@@ -1,9 +1,9 @@
-package com.jesussb.webclient_demo.post.client;
+package com.jesussb.restclient_demo.post.client;
 
-import com.jesussb.webclient_demo.post.Post;
-import com.jesussb.webclient_demo.post.dto.PatchRequest;
-import com.jesussb.webclient_demo.post.dto.PostRequest;
-import com.jesussb.webclient_demo.post.dto.PutRequest;
+import com.jesussb.restclient_demo.post.Post;
+import com.jesussb.restclient_demo.post.dto.PatchRequest;
+import com.jesussb.restclient_demo.post.dto.PostRequest;
+import com.jesussb.restclient_demo.post.dto.PutRequest;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.service.annotation.*;

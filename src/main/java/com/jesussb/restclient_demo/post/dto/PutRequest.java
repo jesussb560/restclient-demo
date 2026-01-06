@@ -1,4 +1,4 @@
-package com.jesussb.webclient_demo.post.dto;
+package com.jesussb.restclient_demo.post.dto;
 
 public record PutRequest(
         Integer id,

@@ -1,7 +1,7 @@
-package com.jesussb.webclient_demo.common;
+package com.jesussb.restclient_demo.common;
 
-import com.jesussb.webclient_demo.post.client.PostClient;
-import com.jesussb.webclient_demo.user.client.UserClient;
+import com.jesussb.restclient_demo.post.client.PostClient;
+import com.jesussb.restclient_demo.user.client.UserClient;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -48,6 +48,8 @@ public class HttpClientConfig {
                     );
         };
     }
+
+
 
 //simple
 //    RestClientHttpServiceGroupConfigurer groupConfigurer() {

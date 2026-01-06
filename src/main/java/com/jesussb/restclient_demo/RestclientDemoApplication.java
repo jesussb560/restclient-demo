@@ -1,13 +1,13 @@
-package com.jesussb.webclient_demo;
+package com.jesussb.restclient_demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class WebclientDemoApplication {
+public class RestclientDemoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(WebclientDemoApplication.class, args);
+		SpringApplication.run(RestclientDemoApplication.class, args);
 	}
 
 }

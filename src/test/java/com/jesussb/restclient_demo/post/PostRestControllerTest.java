@@ -1,6 +1,6 @@
-package com.jesussb.webclient_demo.post;
+package com.jesussb.restclient_demo.post;
 
-import com.jesussb.webclient_demo.post.client.PostClient;
+import com.jesussb.restclient_demo.post.client.PostClient;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.webmvc.test.autoconfigure.WebMvcTest;

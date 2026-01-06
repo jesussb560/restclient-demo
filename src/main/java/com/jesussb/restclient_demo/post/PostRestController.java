@@ -1,9 +1,9 @@
-package com.jesussb.webclient_demo.post;
+package com.jesussb.restclient_demo.post;
 
-import com.jesussb.webclient_demo.post.client.PostClient;
-import com.jesussb.webclient_demo.post.dto.PatchRequest;
-import com.jesussb.webclient_demo.post.dto.PostRequest;
-import com.jesussb.webclient_demo.post.dto.PutRequest;
+import com.jesussb.restclient_demo.post.client.PostClient;
+import com.jesussb.restclient_demo.post.dto.PatchRequest;
+import com.jesussb.restclient_demo.post.dto.PostRequest;
+import com.jesussb.restclient_demo.post.dto.PutRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

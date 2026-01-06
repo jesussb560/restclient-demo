@@ -1,7 +1,6 @@
-package com.jesussb.webclient_demo.user;
+package com.jesussb.restclient_demo.user;
 
-import com.jesussb.webclient_demo.post.Post;
-import com.jesussb.webclient_demo.user.client.UserClient;
+import com.jesussb.restclient_demo.user.client.UserClient;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.webmvc.test.autoconfigure.WebMvcTest;
@@ -12,7 +11,6 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.anyInt;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;

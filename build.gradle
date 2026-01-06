@@ -6,7 +6,7 @@ plugins {
 
 group = 'com.jesussb'
 version = '0.0.1-SNAPSHOT'
-description = 'Demo project for web client'
+description = 'Demo project for rest client'
 
 java {
 	toolchain {

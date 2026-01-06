@@ -1,6 +1,6 @@
-package com.jesussb.webclient_demo.user;
+package com.jesussb.restclient_demo.user;
 
-import com.jesussb.webclient_demo.user.client.UserClient;
+import com.jesussb.restclient_demo.user.client.UserClient;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

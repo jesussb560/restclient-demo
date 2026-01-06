@@ -1,4 +1,4 @@
-package com.jesussb.webclient_demo.post;
+package com.jesussb.restclient_demo.user;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -7,11 +7,9 @@ import lombok.Getter;
 @Getter
 @Builder
 @AllArgsConstructor
-public class Post {
-
+public class User {
     private Integer id;
-    private String title;
-    private String body;
-    private Integer userId;
-
+    private String name;
+    private String username;
+    private String email;
 }
